@@ -1,0 +1,17 @@
+@mixin flex($justifyContent, $alignItems, $gap) {
+    display: flex;
+    align-items: #{$alignItems};
+    justify-content: #{$justifyContent};
+    gap: #{$gap};
+}
+
+nav {
+    padding: 2rem;
+    @include flex("space-between", "center", "3rem");
+
+    .navItems {
+        @include flex("space-between", "center", "3rem");
+        color: #fff;
+    }
+}
+

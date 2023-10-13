@@ -32,10 +32,19 @@ const { title } = Astro.props;
 			white 60%
 		);
 	}
-	html {
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	html, body {
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 		background-size: 224px;
+	}
+	p, h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
 	}
 	code {
 		font-family:
