@@ -1,59 +1,56 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/solid/Header/Header.jsx';
+import Section from '../components/solid/Section/Section.jsx';
+import SectionContent from '../components/solid/SectionContent/SectionContent.jsx';
 import HeadingHero from '../components/solid/HeadingHero/HeadingHero.jsx';
 import BlurEffect from '../components/solid/BlurEffect/BlurEffect.jsx';
-
+import SkillSet from '../components/solid/SkillSet/SkillSet.jsx';
 ---
 
 <Layout title="Welcome to Astro.">
 	<header>
 		<Header></Header>
 	</header>
-	<main>
-		<section>
-			<div>
-				<p>Hi, I am</p>
-				<HeadingHero text="Cristiano Gotardi" />
-			</div>
-			<div>
-				<h3>Front end Developer</h3>
-				<p>Passionate about technology and initiatives <br> that turn the world a better place.</p>
-			</div>
-		</section>
+	<main class="container mx-auto p-20">
+		<Section>
+			<SectionContent>
+				<div>
+					<p>Hi, I am</p>
+					<HeadingHero text="Cristiano Gotardi" />
+				</div>
+				<div>
+					<h3 class="text-h3">Front end | UX Developer</h3>
+					<p>Passionate about technology and initiatives <br> that turn the world a better place.</p>
+				</div>
+			</SectionContent>
+			<SectionContent>
+			</SectionContent>
+		</Section>
+		<Section>
+			<SectionContent>
+				<div>
+					<h2 class="text-h2">About me</h2>
+					<p>Brazilian. 28 years old. Based in Lisbon.</p>
+					<p>Graduated in Analysis and Development Systems at Faculdade de Tecnologia de São Paulo.</p>
+					<p>5+ years of experience of front end development.</p>
+					<p>Passionate about how a good UX / UI can transform a product and increase your value.</p>
+				</div>
+			</SectionContent>
+			<SectionContent>
+			</SectionContent>
+			<SectionContent>
+			</SectionContent>
+		</Section>
+		<Section>
+			<SectionContent>
+				<div>
+					<h2 class="text-h2">Skills</h2>
+					<SkillSet></SkillSet>
+				</div>
+			</SectionContent>
+		</Section>
 	</main>
 	<BlurEffect position={{top: '-200px', left: '300px'}}></BlurEffect>
 	<BlurEffect position={{bottom: '-100px', right: '300px'}}></BlurEffect>
 </Layout>
-
-<style>
-	main {
-		padding: 8rem;
-		display: flex;
-		flex-direction: row;
-		gap: 5rem;
-		height: calc(100vh - 150px);
-	}
-
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		gap: 5rem;
-	}
-
-	p {
-		color: #ACC4DB;
-		font-size: 1.2rem;
-		letter-spacing: 2px;
-	}
-
-	h3 {
-		color: #5AA0B6;
-		font-size: 2rem;
-		font-weight: 400;
-		line-height: 30px;
-		letter-spacing: 5px;
-		margin-bottom: 1rem;
-	}
-</style>

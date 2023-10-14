@@ -1,16 +1,16 @@
-import styles from './Header.module.scss'
+import NavSection from "../NavSection/NavSection";
 
 const Header = () => {
   return (
-    <nav>
-      <div >
-        <p class={styles.navItems}>CR</p>
-      </div>
-      <div class={styles.navItems}>
+    <nav class="flex justify-between justify-items-center gap-12 p-5 fixed">
+      <NavSection>
+        <p>CR</p>
+      </NavSection>
+      <NavSection>
         <p class="nav-item">Theme</p>
         <p class="nav-item">About</p>
         <p class="nav-item">Contact</p>
-      </div>
+      </NavSection>
     </nav>
   );
 };

@@ -1,4 +1,4 @@
-import styles from './BlurEffect.module.css'
+import styles from './BlurEffect.module.scss'
 
 const BlurEffect = ({ position }) => {
     return (
