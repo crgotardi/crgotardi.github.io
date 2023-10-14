@@ -6,9 +6,13 @@ import SectionContent from '../components/solid/SectionContent/SectionContent.js
 import HeadingHero from '../components/solid/HeadingHero/HeadingHero.jsx';
 import BlurEffect from '../components/solid/BlurEffect/BlurEffect.jsx';
 import SkillSet from '../components/solid/SkillSet/SkillSet.jsx';
+import Icon from '../components/solid/Icon/Icon.jsx';
+import Button from '../components/solid/Button/Button.jsx';
+import Clients from '../components/solid/Clients/Clients.jsx';
+import Profile from '../components/solid/Profile/Profile.jsx';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Cristiano Gotardi">
 	<header>
 		<Header></Header>
 	</header>
@@ -50,7 +54,49 @@ import SkillSet from '../components/solid/SkillSet/SkillSet.jsx';
 				</div>
 			</SectionContent>
 		</Section>
+		<Section>
+			<SectionContent>
+				<div>
+					<h2 class="text-h2">Worked with</h2>
+					<div class="flex items-center gap-16 justify-center">
+						<Clients />
+					</div>
+				</div>
+			</SectionContent>
+		</Section>
+		<Section>
+			<SectionContent>
+				<div>
+					<h2 class="text-h2">Let's work together?</h2>
+					<Profile client:only="solid-js" />
+				</div>
+			</SectionContent>
+			<SectionContent>
+				<div class="flex gap-5 justify-center items-center mt-[10rem]">
+					<Button
+						id="email-button"
+						label="Contact me" 
+						icon="gmail"
+					/>
+					<Button
+						id="cv-button"
+						label="CV" 
+						icon="pdf"
+					/>
+				</div>
+			</SectionContent>
+		</Section>
 	</main>
 	<BlurEffect position={{top: '-200px', left: '300px'}}></BlurEffect>
 	<BlurEffect position={{bottom: '-100px', right: '300px'}}></BlurEffect>
+
+	<script>
+		document.querySelector('#email-button').addEventListener('click', () => {
+			window.open('mailto:email@gmail.com', '_blank')
+		})
+
+		document.querySelector('#cv-button').addEventListener('click', () => {
+			window.open('https://drive.google.com/file/d/1zJo3H2x4JG5c4TBfA217S01JqSEvksgb/view?usp=sharing', '_blank')
+		})
+	</script>
 </Layout>

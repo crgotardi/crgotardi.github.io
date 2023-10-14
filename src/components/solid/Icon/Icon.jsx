@@ -45,7 +45,7 @@ import {
     HiOutlineArrowLongRight
 } from 'solid-icons/hi'
 
-const Icon = ({ name, size="1rem" }) => {
+const Icon = ({ name, size="1rem", link=null}) => {
     const icons = {
         'arrow-right': <HiOutlineArrowLongRight />,
         'astro': <SiAstro />,
@@ -76,9 +76,13 @@ const Icon = ({ name, size="1rem" }) => {
     };
 
     return (
-        <div style={{ 'font-size': size }}>
+        <a
+            style={{ 'font-size': size }}
+            href={link ? link : null}
+            target={link ? "_blank" : null}
+        >
             { icons[name] }
-        </div>
+        </a>
     )
 }
 
