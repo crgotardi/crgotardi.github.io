@@ -1,7 +1,7 @@
-const Section = ({ children }) => {
+const Section = ({ height='h-screen', justify='flex-start', children }) => {
     return (
         <section
-            class={`flex items-center mt-10 first:h-128 h-screen`}
+            class={`${height} flex items-center ${justify} gap-10 flex-wrap`}
         >
             { children }
         </section>

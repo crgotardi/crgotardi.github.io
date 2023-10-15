@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,85 +8,108 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	* {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-	}
-	html, body {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	p, h1, h2, h3, h4, h5, h6 {
-		margin: 0;
-		padding: 0;
-	}
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    background-size: 224px;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
 
-	h1 {
-        font-weight: 700;
-		letter-spacing: 5px;
-		color: #bae6fd;
-    }
+  h1 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #bae6fd;
+  }
 
-	h2 {
-		font-weight: 600;
-		letter-spacing: 5px;
-		color: #bae6fd;
-		margin-bottom: 3rem;
-	}
+  h2 {
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #bae6fd;
+    margin-bottom: 3rem;
+  }
 
-	h3 {
-		font-weight: 600;
-		letter-spacing: 5px;
-		color: #bae6fd;
-		margin-bottom: 1rem;
-	}
+  h3 {
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #bae6fd;
+    margin-bottom: 1rem;
+  }
 
-	h4 {
-		font-weight: 500;
-		letter-spacing: 5px;
-		text-transform: uppercase;
-		margin-bottom: 1rem;
-	}
+  h4 {
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
 
-	h5 {
-		font-weight: 500;
-		letter-spacing: 3px;
-		color: #bae6fd;
-	}
+  h5 {
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #bae6fd;
+  }
 
-	h6 {
-		font-weight: 500;
-		letter-spacing: normal;
-	}
+  h6 {
+    font-weight: 500;
+    letter-spacing: normal;
+  }
 
-	p {
-		color: #ACC4DB;
-		margin-bottom: 1rem;
-	}
+  p {
+    color: #acc4db;
+    margin-bottom: 1rem;
+  }
+
+  /* scrollbar */
+  *::-webkit-scrollbar {
+    width: 5px; /* width of the scrollbar */
+    height: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+    border-radius: 50px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #0c4a6e; /* color of the scroll thumb */
+    border-radius: 50px; /* roundness of the scroll thumb */
+  }
 </style>

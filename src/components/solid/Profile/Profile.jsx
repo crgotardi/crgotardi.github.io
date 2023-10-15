@@ -10,12 +10,10 @@ const Profile = () => {
                 src={photo} 
                 alt={name}
                 class="
-                    w-50
-                    grayscale hover:grayscale-0 
-                    brightness-50 hover:brightness-100 
-                    transition ease-in-out duration-150
+                    w-60
                     cursor-pointer
-                    mt-[10rem]
+                    md:mt-[10rem]
+                    rounded-full
                 "
             />
             <div class="mt-6 flex gap-5">

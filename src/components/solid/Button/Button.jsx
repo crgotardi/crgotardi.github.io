@@ -1,6 +1,6 @@
 import Icon from "../Icon/Icon"
 
-const Button = ({ id, label, icon, cb }) => {
+const Button = ({ id, label, icon, cb=null }) => {
     function callback() {
         if (cb && typeof cb === "function") cb()
     }

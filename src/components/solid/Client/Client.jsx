@@ -8,6 +8,8 @@ const Client = ({ client }) => {
                 brightness-50 hover:brightness-100 
                 transition ease-in-out duration-150
                 cursor-pointer
+                w-[30%]
+                h-fit
             "
         ></img>
     )

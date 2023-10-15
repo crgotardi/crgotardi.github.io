@@ -2,7 +2,7 @@ import NavSection from "../NavSection/NavSection";
 
 const Header = () => {
   return (
-    <nav class="flex justify-between justify-items-center gap-12 p-5 pr-10 fixed w-screen">
+    <nav class="flex justify-between justify-items-center gap-12 p-12 fixed w-screen border-box">
       <NavSection>
           <a class="nav-item cursor-pointer font-semibold">
             CR

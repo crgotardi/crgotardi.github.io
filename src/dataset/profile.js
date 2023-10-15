@@ -1,6 +1,6 @@
 export default {
     name: 'Cristiano Gotardi',
-    photo: '',
+    photo: '/images/profile.png',
     medias: [
         {
             icon: 'linkedin',
