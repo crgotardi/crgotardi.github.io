@@ -11,9 +11,11 @@ const Button = ({ id, label, icon, cb=null }) => {
                 id={id}
                 class="
                     bg-transparent 
-                    border border-slate-300
+                    border border-sky-600 hover:border-sky-300
                     px-4 py-2
                     rounded
+                    text-sky-600 hover:text-sky-200
+                    transition-all ease-in-out
                 "
                 onClick={() => callback()}
             >

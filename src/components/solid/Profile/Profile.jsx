@@ -22,6 +22,7 @@ const Profile = () => {
                         name={media.icon}
                         size="2rem"
                         link={media.link}
+                        color="text-sky-600 hover:text-sky-200 transition-all"
                     />
                 ))}
             </div>
