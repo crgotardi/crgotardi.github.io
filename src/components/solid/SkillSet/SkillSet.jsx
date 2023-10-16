@@ -1,6 +1,7 @@
 import Skill from "../Skill/Skill"
 import sets from "../../../dataset/skills"
 
+
 const SkillSet = () => {
     return (
         <>

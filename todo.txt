@@ -1,3 +1,2 @@
 - client dialog
-- resposiveness
 - light theme
