@@ -4,11 +4,11 @@ export default {
     medias: [
         {
             icon: 'linkedin',
-            link: 'https://linkedin.com',
+            link: 'https://linkedin.com/in/crgotardi',
         },
         {
             icon: 'github',
-            link: 'https://github.com',
+            link: 'https://github.com/crgotardi',
         },
         {
             icon: 'gmail',
