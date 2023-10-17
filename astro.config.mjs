@@ -6,5 +6,5 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [solidJs(), tailwind()],
-  site: "https://crgotardi.github.io/"
+  site: "https://crgotardi.github.io/",
 });

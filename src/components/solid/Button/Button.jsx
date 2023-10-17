@@ -1,4 +1,4 @@
-import Icon from "../Icon/Icon"
+import { Icon } from "@components/solid/";
 
 const Button = ({ id, label, icon, cb=null }) => {
     function callback() {

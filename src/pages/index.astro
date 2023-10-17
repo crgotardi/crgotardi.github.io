@@ -1,14 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/solid/Header/Header.jsx";
-import Section from "../components/solid/Section/Section.jsx";
-import SectionContent from "../components/solid/SectionContent/SectionContent.jsx";
-import HeadingHero from "../components/solid/HeadingHero/HeadingHero.jsx";
-import BlurEffect from "../components/solid/BlurEffect/BlurEffect.jsx";
-import SkillSet from "../components/solid/SkillSet/SkillSet.jsx";
-import Button from "../components/solid/Button/Button.jsx";
-import Clients from "../components/solid/Clients/Clients.jsx";
-import Profile from "../components/solid/Profile/Profile.jsx";
+import Layout from "@layouts/Layout.astro";
+import {
+  BlurEffect,
+  Button,
+  Clients,
+  Header,
+  HeadingHero,
+  Profile,
+  Section,
+  SectionContent,
+  SkillSet,
+} from "@components/solid/";
 ---
 
 <Layout title="Cristiano Gotardi">
@@ -61,7 +63,7 @@ import Profile from "../components/solid/Profile/Profile.jsx";
         <div>
           <h2 class="text-h2">Worked with</h2>
           <div class="flex items-center gap-16 justify-center">
-            <Clients />
+            <Clients client:only="solid-js" />
           </div>
         </div>
       </SectionContent>

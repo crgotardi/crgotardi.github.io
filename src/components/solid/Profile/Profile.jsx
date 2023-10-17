@@ -1,5 +1,5 @@
-import profile from '../../../dataset/profile.js';
-import Icon from '../Icon/Icon.jsx';
+import profile from '@dataset/profile';
+import { Icon } from "@components/solid/";
 
 const Profile = () => {
     const { name, photo, medias } = profile

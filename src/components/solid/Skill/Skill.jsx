@@ -1,6 +1,6 @@
 import { createEffect } from "solid-js"
-import Icon from "../Icon/Icon"
 import { animate, inView } from "motion"
+import { Icon } from "@components/solid/";
 
 const Skill = ({ props }) => {
     const { icon, name, progress } = props

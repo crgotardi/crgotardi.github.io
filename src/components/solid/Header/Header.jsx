@@ -1,4 +1,4 @@
-import NavSection from "../NavSection/NavSection";
+import { NavSection } from "@components/solid/";
 
 const Header = () => {
   return (
