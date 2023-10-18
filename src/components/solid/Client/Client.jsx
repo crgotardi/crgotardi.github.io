@@ -1,22 +1,12 @@
-import { animate } from "motion"
+import { animate, timeline } from "motion"
 import { useDialogContext } from '@contexts/dialog';
 
 const Client = ({ client }) => {
-    const { setIsOpen } = useDialogContext()
+    const { setIsOpen, setClient } = useDialogContext()
 
     function openDialog() {
+        setClient(client)
         setIsOpen(true)
-        animateDialog()
-    }
-
-    function animateDialog() {
-        const modal = document.querySelector('.modal')
-        
-        animate(
-            modal,
-            { width: [0, '500px'] },
-            { easing: "ease-in-out" }
-        )
     }
 
     return (

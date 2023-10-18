@@ -11,9 +11,7 @@ const Clients = () => {
                         <Client client={client} />
                     ))}
                 </div>
-                <Dialog>
-                    <p>Titulo</p>
-                </Dialog>
+                <Dialog />
             </>
         </DialogProvider>
     )

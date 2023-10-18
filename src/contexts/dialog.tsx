@@ -4,9 +4,10 @@ export const DialogContext = createContext();
 
 export function DialogProvider(props) {
     const [isOpen, setIsOpen] = createSignal(false);
+    const [client, setClient] = createSignal(null);
 
     return (
-        <DialogContext.Provider value={{isOpen, setIsOpen}}>
+        <DialogContext.Provider value={{isOpen, setIsOpen, client, setClient}}>
             {props.children}
         </DialogContext.Provider>
     );
@@ -14,7 +15,6 @@ export function DialogProvider(props) {
 
 export function useDialogContext() {
     const context = useContext(DialogContext);
-    console.log(context)
 
     if (!context) {
         throw new Error("useCounterContext: cannot find a CounterContext")
