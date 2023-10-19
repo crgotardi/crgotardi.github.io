@@ -1,2 +1,0 @@
-- client dialog
-- light theme

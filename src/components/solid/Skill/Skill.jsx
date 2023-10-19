@@ -36,15 +36,15 @@ const Skill = ({ props }) => {
                         w-[130px]
                     ">
                         <div
-                            class="progress-bar-background bg-sky-950 rounded h-1 w-[130px] absolute z-0"
+                            class="progress-bar-background dark:bg-sky-950 bg-sky-100 rounded h-1 w-[130px] absolute z-0"
                         >
                         </div>
                         <div
                             id={`${icon}-progress`}
-                            class="progress-bar bg-sky-600 rounded h-1 animate-linear z-10 relative"
+                            class="progress-bar bg-action-light dark:bg-action-dark rounded h-1 animate-linear z-10 relative"
                         >
                         </div>
-                        <span class="bg-sky-600 p-1 rounded text-xs font-semibold">
+                        <span class="bg-action-light dark:bg-action-dark p-1 rounded text-xs font-semibold text-background-light dark:text-background-dark">
                             {progress}%
                         </span>
                     </div>

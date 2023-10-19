@@ -45,7 +45,7 @@ import {
     HiOutlineArrowLongRight
 } from 'solid-icons/hi'
 
-const Icon = ({ name, size="1rem", link=null, color=null}) => {
+const Icon = ({ name, size = "1rem", link = null, color = null, callback = null }) => {    
     const icons = {
         'arrow-right': <HiOutlineArrowLongRight />,
         'astro': <SiAstro />,
@@ -75,12 +75,20 @@ const Icon = ({ name, size="1rem", link=null, color=null}) => {
         'xd': <SiAdobexd />,
     };
 
+    function handleCallback() {
+        console.log(callback)
+        if (callback && typeof callback === 'function') {
+            callback()
+        }
+    }
+
     return (
         <a
             style={{ 'font-size': size }}
+            class={`${color} transition-all`}
             href={link ? link : null}
             target={link ? "_blank" : null}
-            class={`${color}`}
+            onClick={handleCallback}
         >
             { icons[name] }
         </a>

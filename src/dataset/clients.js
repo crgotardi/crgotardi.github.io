@@ -4,7 +4,7 @@ export default [
         logo: '/images/razzo.png',
         alt: 'Logo Razzo Tech',
         website: 'https://razzo.tech',
-        about: `A razzo is a Brazilian software house, located in Rio Grande do Sul, focused on the development and support of innovative digital solutions.`
+        about: `Razzo is a Brazilian software house, located in Rio Grande do Sul, focused on the development and support of innovative digital solutions.`
     },
     {
         name: 'T2S',

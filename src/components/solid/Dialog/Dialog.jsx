@@ -1,4 +1,4 @@
-import { animate, timeline } from "motion"
+import { timeline } from "motion"
 import { useDialogContext } from '@contexts/dialog';
 import { createEffect } from "solid-js";
 
@@ -81,7 +81,17 @@ const Dialog = () => {
             class={`modal fade fixed top-0 right-0 h-screen z-30 w-0 md:max-w-[500px] max-w-screen`}
         >
             <div class="dialog">
-                <div class="content h-screen p-10 flex flex-col justify-between backdrop-blur-sm bg-stone-950/90">
+                <div class="
+                    content
+                    h-screen
+                    p-10
+                    flex
+                    flex-col
+                    justify-between
+                    backdrop-blur-sm
+                    dark:bg-stone-950/90
+                    bg-stone-300/90
+                ">
                     <div class="header text-right">
                         <button
                             type="button"
@@ -100,7 +110,7 @@ const Dialog = () => {
                             ></img>
                         </div>
                         <div>
-                            <p class="my-40">
+                            <p class="my-40 text-text-light dark:text-text-dark">
                                 {client()?.about}
                             </p>
                         </div>
@@ -110,10 +120,10 @@ const Dialog = () => {
                                 target="_blank"
                                 class="
                                     bg-transparent 
-                                    border border-sky-600 hover:border-sky-300
+                                    border border-action-light hover:border-sky-300 dark:border-action-dark
                                     px-4 py-2
                                     rounded
-                                    text-sky-600 hover:text-sky-200
+                                    text-action-light hover:text-sky-200 dark:text-action-dark
                                     transition-all ease-in-out
                                 "
                             >

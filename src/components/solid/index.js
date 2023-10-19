@@ -12,6 +12,7 @@ import Section from "@components/solid/Section/Section.jsx";
 import SectionContent from "@components/solid/SectionContent/SectionContent.jsx";
 import Skill from "@components/solid/Skill/Skill.jsx";
 import SkillSet from "@components/solid/SkillSet/SkillSet.jsx";
+import ToggleTheme from "@components/solid/ToggleTheme/ToggleTheme.jsx";
 
 export {
     BlurEffect,
@@ -27,5 +28,6 @@ export {
     Section,
     SectionContent,
     Skill,
-    SkillSet
+    SkillSet,
+    ToggleTheme
 }
