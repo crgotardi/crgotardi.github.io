@@ -88,9 +88,9 @@ const Dialog = () => {
                     flex
                     flex-col
                     justify-between
-                    backdrop-blur-sm
-                    dark:bg-stone-950/90
-                    bg-stone-300/90
+                    backdrop-blur-lg
+                    dark:bg-slate-700/20
+                    bg-slate-300/60
                 ">
                     <div class="header text-right">
                         <button

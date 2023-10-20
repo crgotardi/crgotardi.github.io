@@ -1,6 +1,4 @@
 import {
-    FaRegularMoon,
-    FaRegularSun,
     FaBrandsReact,
     FaBrandsVuejs,
     FaBrandsSquareJs,
@@ -38,7 +36,9 @@ import {
 } from 'solid-icons/si'
 
 import {
-    BsFilePdf
+    BsFilePdf,
+    BsSunFill,
+    BsMoonFill
 } from 'solid-icons/bs'
 
 import {
@@ -59,7 +59,7 @@ const Icon = ({ name, size = "1rem", link = null, color = null, callback = null 
         'js': <FaBrandsSquareJs />,
         'k8s': <SiKubernetes />,
         'linkedin': <FaBrandsLinkedin />,
-        'moon': <FaRegularMoon />,
+        'moon': <BsMoonFill />,
         'node': <FaBrandsNodeJs />,
         'nuxt': <TbBrandNuxt />,
         'next': <TbBrandNextjs />,
@@ -69,14 +69,13 @@ const Icon = ({ name, size = "1rem", link = null, color = null, callback = null 
         'remix': <SiRemix />,
         'sass': <FaBrandsSass />,
         'solid': <TbBrandSolidjs />,
-        'sun': <FaRegularSun />,
+        'sun': <BsSunFill />,
         'tailwind': <BiLogosTailwindCss />,
         'vue': <FaBrandsVuejs />,
         'xd': <SiAdobexd />,
     };
 
     function handleCallback() {
-        console.log(callback)
         if (callback && typeof callback === 'function') {
             callback()
         }

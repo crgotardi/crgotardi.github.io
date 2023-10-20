@@ -1,11 +1,40 @@
+import { createEffect } from 'solid-js'
 import { NavSection, ToggleTheme } from "@components/solid/";
-import { Icon } from "@components/solid/";
-import { ThemeProvider } from '@contexts/theme';
+import { ThemeProvider } from '@contexts/theme'
 
 const Header = () => {
+  let navEl = null
+  const compactHeaderClass = ['h-[20px]', 'py-6', 'px-12', 'bg-slate-300/60', 'dark:bg-slate-100/10', 'backdrop-blur-xl']
+  const normalHeaderClass = ['p-12']
+
+  console.log(compactHeaderClass)
+  console.log(normalHeaderClass)
+
+  createEffect(() => {
+    navEl = document.querySelector('nav')
+
+    document.addEventListener('scroll', () => {
+      if (window.window.scrollY <= 100) {
+        setNormalHeaderClass()
+      } else {
+        setCompactHeaderClass()
+      }
+    })
+  }, [])
+
+  function setCompactHeaderClass() {
+    navEl.classList.remove(...normalHeaderClass)
+    navEl.classList.add(...compactHeaderClass)
+  }
+
+  function setNormalHeaderClass() {
+    navEl.classList.remove(...compactHeaderClass)
+    navEl.classList.add(...normalHeaderClass)
+  }
+
   return (
     <ThemeProvider>
-      <nav class="flex justify-between justify-items-center gap-12 p-12 fixed w-screen border-box items-center">
+      <nav class="flex justify-between justify-items-center gap-12 p-12 fixed w-screen border-box items-center transition-all z-50">
         <NavSection>
           <a class="
             nav-item
