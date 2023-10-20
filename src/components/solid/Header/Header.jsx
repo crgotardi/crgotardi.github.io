@@ -7,9 +7,6 @@ const Header = () => {
   const compactHeaderClass = ['h-[20px]', 'py-6', 'px-12', 'bg-slate-300/60', 'dark:bg-slate-100/10', 'backdrop-blur-xl']
   const normalHeaderClass = ['p-12']
 
-  console.log(compactHeaderClass)
-  console.log(normalHeaderClass)
-
   createEffect(() => {
     navEl = document.querySelector('nav')
 

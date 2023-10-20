@@ -12,7 +12,6 @@ const Profile = () => {
                 class="
                     w-60
                     cursor-pointer
-                    md:mt-[10rem]
                     rounded-full
                 "
             />

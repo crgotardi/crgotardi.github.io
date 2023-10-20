@@ -95,7 +95,7 @@ const Dialog = () => {
                     <div class="header text-right">
                         <button
                             type="button"
-                            class="close text-lg"
+                            class="close text-lg mt-[10%]"
                             onClick={() => closeDialog()}
                         >
                             &times;
@@ -110,7 +110,7 @@ const Dialog = () => {
                             ></img>
                         </div>
                         <div>
-                            <p class="my-40 text-text-light dark:text-text-dark">
+                            <p class="my-[20%] text-text-light dark:text-text-dark">
                                 {client()?.about}
                             </p>
                         </div>

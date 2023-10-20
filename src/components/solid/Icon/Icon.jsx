@@ -9,7 +9,8 @@ import {
     FaBrandsNodeJs,
     FaBrandsGitAlt,
     FaBrandsFigma,
-    FaBrandsLinkedin
+    FaBrandsLinkedin,
+    FaBrandsWhatsapp
 } from 'solid-icons/fa'
 
 import {
@@ -72,6 +73,7 @@ const Icon = ({ name, size = "1rem", link = null, color = null, callback = null 
         'sun': <BsSunFill />,
         'tailwind': <BiLogosTailwindCss />,
         'vue': <FaBrandsVuejs />,
+        'whatsapp': <FaBrandsWhatsapp />,
         'xd': <SiAdobexd />,
     };
 

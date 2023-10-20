@@ -61,24 +61,21 @@ import {
     <Section>
       <SectionContent>
         <div>
-          <h2 class="text-h2">Worked with</h2>
+          <h2 class="text-h2 mb-2">Worked with</h2>
+          <p class="text-secondary-light dark:text-secondary-dark text-sm">
+            (Click on logo to see more info)
+          </p>
           <div class="flex items-center gap-16 justify-center">
             <Clients client:only="solid-js" />
           </div>
         </div>
       </SectionContent>
     </Section>
-    <Section height="h-3/6" justify="justify-center">
+    <Section height="h-auto" justify="justify-center">
       <SectionContent>
-        <div>
+        <div class="mt-[2rem]">
           <h2 class="text-h2">Let's work together?</h2>
           <Profile client:only="solid-js" />
-        </div>
-      </SectionContent>
-      <SectionContent>
-        <div class="flex gap-5 justify-center items-center md:mt-[10rem]">
-          <Button id="email-button" label="E-mail" icon="gmail" />
-          <Button id="cv-button" label="CV" icon="pdf" />
         </div>
       </SectionContent>
     </Section>
